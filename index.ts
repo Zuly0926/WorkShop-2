@@ -1,6 +1,7 @@
 import { Empleado } from "./Empleado";
 import { Direccion } from "./interface";
 import { Persona } from "./Persona";
+import { crearJsonYTransformar } from "./util";
 
 const personas: Persona[] = []
 for (let i = 1; i <= 10; i++) {
@@ -19,3 +20,5 @@ for (let i = 1; i <= 10; i++) {
 }
 
 empleados.forEach(empleado => empleado.saludar())
+
+crearJsonYTransformar
