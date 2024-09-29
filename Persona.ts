@@ -16,6 +16,6 @@ export class Persona {
     }
 
     saludar(): void {
-        console.log(`Persona: Tu nombre es ${this.Nombre} y tienes ${this.getEdad} años. Vives en ${this.direccion.Ciudad}, ${this.direccion.Pais}`)
+        console.log(`Persona: Tu nombre es ${this.Nombre} y tienes ${this.getEdad()} años. Vives en ${this.direccion.Ciudad}, ${this.direccion.Pais}`)
     }
 }
