@@ -1,5 +1,5 @@
 
-class Persona {
+export class Persona {
     Nombre: string
     Edad: number
 
