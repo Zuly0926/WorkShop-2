@@ -11,5 +11,9 @@ class Empleado extends Persona {
     trabajar(horas: number): void {
         console.log(`${this.Nombre} trabaja ${horas} horas al dia.`)
     }
+
+    saludar(): void {
+        console.log(`Empleado: Hola ${this.Nombre}, tu edad es ${this.getEdad()} y el salario es de ${this.salario}.`)
+    }
     
 }
