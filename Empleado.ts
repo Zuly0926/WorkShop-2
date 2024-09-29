@@ -1,6 +1,6 @@
 import { Persona } from "./Persona";
 
-class Empleado extends Persona {
+export class Empleado extends Persona {
     salario: number
 
     constructor(Nombre: string, Edad: number, salario: number) {
