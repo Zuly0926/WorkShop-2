@@ -1,15 +1,15 @@
 
-abstract class Vehiculo {
+export abstract class Vehiculo {
     abstract arrancar(): void
 }
 
-class Coche extends Vehiculo{
+export class Coche extends Vehiculo{
     arrancar(): void {
         console.log("El coche esta arrancando.")
     }
 }
 
-class Moto extends Vehiculo{
+export class Moto extends Vehiculo{
     arrancar(): void {
         console.log("La moto esta arrancando.")
     }
