@@ -3,6 +3,7 @@ import { Empleado } from "./Empleado";
 import { Direccion } from "./interface";
 import { Persona } from "./Persona";
 import { crearJsonYTransformar } from "./util";
+import { empleadosJSON } from "./JsonEmpleado";
 
 const personas: Persona[] = []
 for (let i = 1; i <= 10; i++) {
@@ -32,3 +33,18 @@ for (let i = 1; i <= 10; i++) {
 
 empleados.forEach(empleado => empleado.saludar())
 crearJsonYTransformar
+
+
+const transformarJsonAEmpleado = (empleadosJSON: any): Empleado => {
+    const { nombre, edad,direccion, salario } = empleadosJSON
+    return new Empleado(nombre,edad,direccion,salario)
+  }
+
+  const empleadosDesdeJson = empleadosJSON.map(transformarJsonAEmpleado)
+
+  const empleadosComoJson = JSON.stringify(empleadosDesdeJson)
+  console.log(empleadosComoJson)
+
+
+
+
