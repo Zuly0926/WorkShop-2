@@ -9,7 +9,7 @@ export class Empleado extends Persona {
     salario: number
     proyectos: Proyecto[]
 
-    constructor(Nombre: string, Edad: number, salario: number, direccion: Direccion, estadoCivil: EstadoCivil, vehiculos:Vehiculo[]=[]) {
+    constructor(Nombre: string, Edad: number, salario: number, direccion: Direccion, estadoCivil: EstadoCivil) {
         super (Nombre, Edad, direccion, estadoCivil)
         this.salario = salario
         this.proyectos = []
