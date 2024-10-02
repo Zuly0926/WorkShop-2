@@ -6,6 +6,7 @@ import { transformarJsonAPersona } from "./util";
 import { EstadoCivil } from "./enum";
 import { Empresa } from "./Empresa";
 import { Proyecto } from "./proyecto";
+import { Departamento } from "./departamento";
 
 const direccion: Direccion = { Calle: "Calle 123", Ciudad: "Ciudad X", Pais: "País Y" };
 
@@ -51,6 +52,11 @@ for (let i = 1; i <= 10; i++) {
     
 
     console.log(`Total de salarios en la empresa: ${empresa.calcularTotalSalarios()}`)
+
+    const departamentoIT = new Departamento(`IT`)
+    departamentoIT.agregarEmpleado(empleado)
+
+    departamentoIT.listarEmpleados()
 
     // Crear proyecto y asignar empleados
     const proyecto1 = new Proyecto(`Desarrollo Web`)
